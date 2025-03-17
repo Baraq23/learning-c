@@ -4,7 +4,9 @@ int main() {
     int age;
     printf("What's your age?: ");
     scanf("%d", &age);
-    if (age <= 12) {
+    if (age <= 0) {
+        printf("Invalid age\n");
+    } else if (age > 0 && age <= 12) {
         printf("You are a minor\n");
     } else if (age > 12 && age <= 18) {
         printf("You are a teenager.\n");
