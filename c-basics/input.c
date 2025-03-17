@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -6,11 +7,11 @@ int main()
     int age;
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);
-    name[strlen(name)-1] = '\0';
+    // name[strlen(name)-1] = '\0';
     printf("What's your age?: ");
     scanf("%d", &age);
 
-    printf("Hi %s, we recorded your age as: %d\n\n", name, age);
+    printf("Hi %s, we recorded your age as: %d yr(s) old\n\n", name, age);
 
     return 0;
 }
